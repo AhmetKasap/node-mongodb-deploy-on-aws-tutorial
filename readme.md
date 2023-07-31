@@ -57,6 +57,9 @@
     sudo a2ensite nodejsProject.conf   # conf dosyasını etkinleştir
     sudo a2dissite 000-default.conf    # varsayılan conf dosyası etkinliğini sonlandır
     
+    sudo a2enmod proxy                 # yönlendirme yapılabilmesi için ayarlamalar.
+    sudo a2enmod proxy_http
+    
     sudo systemctl start  apache2      # apache2 başlatma
     sudo systemctl status apache2      # apache2 çalıştığını kontrol etme
     
